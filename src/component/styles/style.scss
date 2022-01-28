@@ -1,0 +1,370 @@
+$iphonex: 375px;
+$main-text: #424749;
+$sub-text: #6e7679;
+$picker: #e2e4e4;
+$outline: #f1f1f2;
+
+@media screen and (min-width: 280px) {
+  .header {
+    background: white; // display: none;
+  }
+
+  .hide {
+    transform: translateY(-300%);
+  }
+
+  .button-card {
+    position: fixed;
+    top: 8rem;
+    transition: 0.5s;
+    background: white;
+  }
+
+  .head {
+    a {
+      text-decoration: none;
+    }
+
+    #arrow-back {
+      font-size: 30px;
+      cursor: pointer;
+      color: $main-text;
+    }
+
+    .address {
+      cursor: pointer;
+
+      &-p {
+        text-transform: uppercase;
+        font-size: 10px;
+        color: $sub-text;
+      }
+
+      h2 {
+        font-size: 20px;
+        color: $main-text;
+      }
+
+      #arrow-down {
+        color: #f9234a;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .popup {
+    margin-top: 63px;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    background: white;
+    box-shadow: 0px -140px 0px 0 rgba(10, 31, 68, 0.3);
+
+    #icon-close {
+      position: absolute;
+      right: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &-search-box {
+      border: 2px solid #e2e4e4;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+      background: white;
+
+      #location {
+        font-size: 25px;
+        color: #f9234a;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+    &-search-result {
+      width: 100%;
+
+      h3 {
+        font-size: 15px;
+        font-weight: 100px;
+        color: $main-text;
+      }
+
+      p {
+        font-size: 15px;
+        color: #6e7679;
+      }
+
+      .brd::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #f1f1f2;
+        width: 98%;
+      }
+    }
+  }
+
+  .popup {
+    #result-location {
+      font-size: 25px;
+      color: $sub-text;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background: $picker;
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  .date {
+    width: 60px;
+    height: 60px;
+    text-transform: uppercase;
+
+    p {
+      font-size: 13px;
+    }
+
+    h3 {
+      margin-top: -5px;
+    }
+  }
+
+  .date:hover {
+    border-radius: 50%;
+    background: #424749;
+    width: 60px;
+    height: 60px;
+    color: white;
+  }
+
+  .btn-card {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    button {
+      background: none;
+      border: 2px solid $picker;
+      color: $picker;
+      width: 170px;
+      font-size: 15px;
+      height: 35px;
+    }
+
+    .act {
+      background: $main-text;
+      border: $main-text;
+    }
+
+    .dinner {
+      border-left: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .lunch {
+      border-right: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+
+  .card-container {
+    background: #faf8f8;
+    margin-bottom: 6rem;
+    margin-top: 11rem;
+  }
+
+  .day-card {
+    width: 90%;
+  }
+
+  .day {
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+      color: $main-text;
+    }
+  }
+
+  .card1 {
+    width: 90%;
+    height: 30rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 30px rgba($color: #ada8a8, $alpha: 1);
+
+    img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      box-sizing: border-box;
+    }
+
+    .detail {
+      width: 100%;
+    }
+  }
+
+  .ratings {
+    p {
+      font-size: 15px;
+      font-weight: bold;
+      color: $sub-text;
+    }
+
+    #star {
+      font-size: 13px;
+      color: #f9234a;
+      padding-right: 2px;
+    }
+  }
+
+  .items {
+    h3 {
+      font-size: 15px;
+      color: $main-text;
+    }
+
+    p {
+      font-size: 12px;
+      color: $sub-text;
+    }
+  }
+
+  .prices {
+    h3 {
+      font-size: 18px;
+      color: $main-text;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      height: 40px;
+    }
+
+    button {
+      background: #f9423a;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  .card-cart {
+    position: fixed;
+    margin-bottom: 20px;
+    bottom: 0;
+    background: #a23530;
+    width: 95%;
+    height: 4rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 30px 10px 0 rgba(230, 227, 227, 0.8);
+    color: white;
+
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    #shopping {
+      font-size: 30px;
+    }
+  }
+
+  .carousel {
+    border-bottom: 1px solid $picker;
+
+    .slider {
+      width: 90%;
+      padding-bottom: 6px;
+
+      p {
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+
+      h4 {
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .we {
+        color: $picker;
+      }
+
+      .active {
+        padding-top: 10px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .active:hover {
+        border-radius: 50%;
+        background: $main-text;
+        color: white;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  // .carousel-card {
+  //   width: 100%;
+  //   color: $main-text;
+  //   border-bottom: 1px solid;
+  //   padding-bottom: 4px;
+
+  //   .we {
+  //     color: $picker;
+  //   }
+
+  //   p {
+  //     font-size: 10px;
+  //     text-transform: uppercase;
+  //   }
+
+  //   h4 {
+  //     font-size: 15px;
+  //     font-weight: 600;
+  //   }
+
+  //   .active {
+  //     padding-top: 10px;
+  //     width: 50px;
+  //     height: 50px;
+  //     text-decoration: none;
+  //   }
+
+  //   .active:hover {
+  //     border-radius: 50%;
+  //     background: $main-text;
+  //     color: white;
+  //     width: 50px;
+  //     height: 50px;
+  //     text-decoration: none;
+  //   }
+  // }
+}
+
+@media screen and (max-width: 375px) {
+  .btn-card {
+    button {
+      width: 40vw;
+    }
+  }
+}
